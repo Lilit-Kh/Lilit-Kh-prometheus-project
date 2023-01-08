@@ -1,1 +1,1 @@
-# Lilit-Kh-specific-book-prometheus-project
+# Lilit-Kh-prometheus-project
