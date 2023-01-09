@@ -1,0 +1,232 @@
+
+body {
+    position: relative;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-width: 320px;
+    overflow-x: hidden;
+    height: auto;
+    
+}
+
+
+
+.navbar {
+width: 100%;
+height: 100px;
+display: inline-block;
+position: relative;
+border: 1px solid rgb(186, 168, 4);
+
+}
+
+
+
+.container {
+height: inherit ;
+display: flex;
+justify-content: space-between;
+align-items: center ;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;  
+
+    
+      
+}
+
+.navbar-menu li {
+display: inline-block;
+margin-right: 20px;
+}
+
+
+.navbar-brand {
+    margin: 20px;
+}
+
+
+.book {
+    display: flex;
+    margin: 30px;
+   
+
+    
+}
+
+.book-image{
+    border: none; /* потом поменять 1px solid rgb(186, 168, 4) на border none. сейчас стоит солид чтобы */
+    padding: 10px;
+    
+   
+
+    /* удалть
+    display: flex;
+justify-content: space-between;
+align-items: center ;
+  */  
+  
+}
+
+.image-book1{
+    width: fit-content;
+    width: 100%; /* Ширина изображений */
+    height: 100%; /* Высота изображении */
+    object-fit: fill; /* Вписываем фотографию в область */
+    padding: 10px;
+    
+}
+
+.text
+{
+    margin-left: 15px;
+}
+
+.book-items {
+    border: none;
+    padding: 10px;
+    width: 33%;
+    
+}
+
+.book-price {
+    border: none;
+    padding: 10px;
+    width: 34%;
+
+
+   
+}
+
+
+.total-price{
+    border: dashed 3px #D0BC82;
+    padding: 10px;
+
+    margin: 25px;
+                 
+    padding-top:30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+     
+    
+
+}
+
+.price-box{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+
+}
+
+.wrapper{
+    margin-top:10px;
+    padding: 0px;
+ 
+}
+
+#Count {
+    -moz-appearance: textfield;
+    
+  }
+
+
+
+ /* дизайн кнопки
+  */  
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background:#D0BC82;
+background: linear-gradient(0deg,#D0BC82 0%,#D0BC82 100%);
+}
+.btn-5:hover {
+  color: #D0BC82;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background:#D0BC82;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #d0bd8242,
+   4px 4px 5px 0px #d0bd8242;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/* дизайн кнопки код закончился
+  */ 
+
+
+  details {
+	
+	margin-bottom: 250px;
+	
+	&[open] summary::after {
+		content: "\f107";
+	}
+}
+
+   
+
+summary {
+	&::after {
+		font-family: "Open Sans";
+		content: "\f105";
+		display: inline-block;
+		padding-left: 10px;
+	}
+	
+	&::-webkit-details-marker {
+		display: none
+	}
+}
+
+
